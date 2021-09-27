@@ -1,0 +1,735 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://wrenand.co.uk/fpn/"
+     xml:base="http://wrenand.co.uk/fpn/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://wrenand.co.uk/fpn/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/actionImpacts -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/actionImpacts"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/activeIn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/activeIn">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Actor"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Issue"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/relatesTo"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/advise -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/advise">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/amend -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/amend">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/awardedTo -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/awardedTo">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/concernsPlace -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/concernsPlace">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/deliberateOn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/deliberateOn">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/formWorkingGroups -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/formWorkingGroups">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/implement -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/implement">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/interactWith -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/interactWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/takeAction"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/actionImpacts"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/invite -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/invite">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/issueIn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/issueIn">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Issue"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Place"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://wrenand.co.uk/fpn/relatesTo"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/concernsPlace"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/launch -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/launch">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/locatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/makePolicyRecommendationsFor -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/makePolicyRecommendationsFor">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/makeRecommendationsFor -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/makeRecommendationsFor">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/measure -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/measure">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/modelAndExtrapolate -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/modelAndExtrapolate">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/provide -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/provide">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/publish -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/publish">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/publishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/publishedIn">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/raiseAwarenessOf -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/raiseAwarenessOf">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/actionImpacts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/relatesTo">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Issue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/resultIn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/resultIn">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/takeAction -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/takeAction"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/usesMethod -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/usesMethod">
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/workingOn -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/workingOn">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Actor"/>
+        <rdfs:range rdf:resource="http://wrenand.co.uk/fpn/Issue"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/takeAction"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/relatesTo"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/wrote -->
+
+    <owl:ObjectProperty rdf:about="http://wrenand.co.uk/fpn/wrote">
+        <rdfs:subPropertyOf rdf:resource="http://wrenand.co.uk/fpn/takeAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/citations -->
+
+    <owl:DatatypeProperty rdf:about="http://wrenand.co.uk/fpn/citations">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/date -->
+
+    <owl:DatatypeProperty rdf:about="http://wrenand.co.uk/fpn/date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/impactFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://wrenand.co.uk/fpn/impactFactor">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/peerReviewed -->
+
+    <owl:DatatypeProperty rdf:about="http://wrenand.co.uk/fpn/peerReviewed">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/significance -->
+
+    <owl:DatatypeProperty rdf:about="http://wrenand.co.uk/fpn/significance">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/source -->
+
+    <owl:DatatypeProperty rdf:about="http://wrenand.co.uk/fpn/source">
+        <rdfs:domain rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Academic -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Academic">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Action -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Action"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Activity -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Activity">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Actor -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Actor"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Advice -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Advice">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Article -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Article">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Book_Chapter -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Book_Chapter">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Business -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Business">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Coalition -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Coalition">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Community -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Community">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Conference_Paper -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Conference_Paper">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Convention -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Convention">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Country -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Country">
+        <owl:equivalentClass rdf:resource="http://wrenand.co.uk/fpn/Nation"/>
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Deliberation -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Deliberation">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Entrepreneur -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Entrepreneur">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Event -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Event">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Funding -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Funding">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Government -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Government">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Government_Department -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Government_Department">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Group -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Group">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Actor"/>
+        <owl:disjointWith rdf:resource="http://wrenand.co.uk/fpn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Guidelines -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Guidelines">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Intergovernmental_Organization -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Intergovernmental_Organization">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Issue -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Issue"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Journal -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Journal">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Magazine_Article -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Magazine_Article">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Method -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Method"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Nation -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Nation">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Person -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Person">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Place -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Place"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Policy -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Policy">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Policy_Paper_or_Report -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Policy_Paper_or_Report">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Political_Party -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Political_Party">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Government"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Poster -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Poster">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Press_Release -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Press_Release">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Public_Benefit -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Public_Benefit">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Publication -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Publication"/>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Question -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Question">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Recommendation -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Recommendation">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Research_Institute -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Research_Institute">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Scientist -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Scientist">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Study -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Study">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Thesis -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Thesis">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/Toolkit -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/Toolkit">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/government -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/government">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wrenand.co.uk/fpn/intergovernmental -->
+
+    <owl:Class rdf:about="http://wrenand.co.uk/fpn/intergovernmental">
+        <rdfs:subClassOf rdf:resource="http://wrenand.co.uk/fpn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Action"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Actor"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Issue"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Method"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Place"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Action"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Actor"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Issue"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Method"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Place"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Publication"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Action"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Actor"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Issue"/>
+            <rdf:Description rdf:about="http://wrenand.co.uk/fpn/Place"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

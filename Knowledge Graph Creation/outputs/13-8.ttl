@@ -1,0 +1,1216 @@
+@prefix fp: <http://wrenand.co.uk/fpn/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fp:Angus_Soft_Fruits a fp:Actor,
+        fp:Supplier,
+        owl:NamedIndividual ;
+    fp:collaborating fp:providing_recyled_punnets ;
+    fp:locatedIn fp:UK ;
+    fp:workingOn fp:resources_use .
+
+fp:BP a fp:Actor,
+        fp:energy_supplier,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:UK ;
+    fp:partnering fp:Rolling_out_anti-food_waste_app ;
+    fp:workingOn fp:retail_waste .
+
+fp:Barfoots a fp:Actor,
+        fp:Producer,
+        owl:NamedIndividual ;
+    fp:launching fp:A_new_cauliflower_product ;
+    fp:locatedIn fp:UK ;
+    fp:workingOn fp:food_waste .
+
+fp:Baroness_Jenkin_of_Kennington a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:progress_tmade_on__reducing_household_food_waste ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:household_food_waste .
+
+fp:Baroness_Scott_of_Needham_Market a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Food_waste_prevention ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:food_waste .
+
+fp:British_Summer_Fruits a fp:Actor,
+        fp:Grower_body,
+        owl:NamedIndividual ;
+    fp:concern fp:Statement ;
+    fp:locatedIn fp:UK ;
+    fp:workingOn fp:food_waste_and_a_loss_of_sales .
+
+fp:Champions_12.3 a fp:Actor,
+        fp:Coalition,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:The_Netherlands ;
+    fp:publish fp:Target_Measure_Act_approach ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:DEFRA a fp:Actor,
+        fp:Government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:A_Plan_for_Public_Procurement_of_Food_and_Catering_Services,
+        fp:Departmental_Wastes,
+        <http://wrenand.co.uk/fpn/Food:_Waste_Disposal>,
+        fp:Food_Waste_Disposal,
+        fp:Food_waste_prevention,
+        fp:Foodwaste_collection,
+        <http://wrenand.co.uk/fpn/Kitchen_food_waste_cannot_be_composted_in_open_windrows.> ;
+    fp:implementing fp:Tarrifs_on_food_waste ;
+    fp:launch fp:Food_surplus_and_waste_hierarchy,
+        fp:Public_procurement_of_food_and_catering,
+        fp:public_procurement_of_food_and_catering ;
+    fp:locatedIn fp:London,
+        fp:Southampton,
+        fp:london ;
+    fp:provide fp:Citizen_Food_Waste_Prevention_Grant,
+        fp:Food_Waste_Reduction_fund,
+        fp:Value_from_Food_Waste_fund,
+        fp:anaerobic_digestion_of_manure_and_food_waste_demonstration_projects ;
+    fp:publish fp:Food_Labelling ;
+    fp:workingOn fp:anaerobic_digestion_of_food_waste,
+        fp:composting,
+        fp:consumer_food_waste,
+        fp:environmental_impact_of_waste,
+        fp:food_waste,
+        fp:food_waste_collection,
+        fp:food_waste_crime,
+        fp:hospitality_and_food_service_food_waste,
+        fp:household_food_waste,
+        fp:reducing_food_waste,
+        fp:surplus_food_redistribution,
+        fp:unpackaged_food_waste,
+        fp:waste_sent_to_landfill .
+
+fp:Dr_Alan_Whitehead a fp:Actor,
+        fp:Scientist,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Foodwaste_collection,
+        fp:Separate_collection_of_household_waste ;
+    fp:locatedIn fp:Southampton ;
+    fp:workingOn fp:food_waste,
+        fp:food_waste_collection .
+
+fp:Executive_Director_of_UNEP a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Food_loss_and_waste_to_be_part_of_national_climate_strategies ;
+    fp:locatedIn fp:Nairobi ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:FAO_Director-General a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Food_loss_and_waste_is_a_big_challenge_of_our_time ;
+    fp:locatedIn fp:Nairobi ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:FSA a fp:Actor,
+        fp:Government,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:London ;
+    fp:publish fp:Food_Labelling ;
+    fp:workingOn fp:consumer_food_waste,
+        fp:food_waste_crime .
+
+fp:Isaac_Sesi a fp:Actor,
+        fp:Entreprenuer,
+        owl:NamedIndividual ;
+    fp:deliberate fp:fight_food_loss_with_innovation ;
+    fp:locatedIn fp:Nairobi ;
+    fp:workingOn fp:post-harvest_loss .
+
+fp:Ken_Murphy a fp:Actor,
+        fp:CEO,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:UK ;
+    fp:speaking fp:Statement ;
+    fp:workingOn fp:hgv_driver_crisis .
+
+fp:Kerry_McCarthy a fp:Actor,
+        fp:Scientist,
+        owl:NamedIndividual ;
+    fp:deliberate <http://wrenand.co.uk/fpn/farmers_rewarded_for_doing_the_right_thing_with_food_waste,> ;
+    fp:locatedIn fp:Bristol_East ;
+    fp:workingOn fp:food_waste .
+
+fp:Lord_Goldsmith a fp:Actor,
+        fp:Scientist,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Reducing_Food_waste ;
+    fp:locatedIn fp:Richmond_Park ;
+    fp:workingOn fp:food_waste .
+
+fp:Lord_Rooker a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Preventing_excess_food_from_going_into_dustbins ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:energy_from_waste .
+
+fp:Lord_Stoddart_of_Swindon a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Food_waste_prevention ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:food_waste .
+
+fp:Mark_Pawsey a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Use_food_waste_as_resource ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:energy_from_waste .
+
+fp:Morrisons a fp:Actor,
+        fp:Retailer,
+        owl:NamedIndividual ;
+    fp:creating_choice fp:Choose-your-own-egg_stand ;
+    fp:locatedIn fp:UK ;
+    fp:workingOn fp:food_waste .
+
+fp:Ranjit_Singh a fp:Actor,
+        fp:president,
+        owl:NamedIndividual ;
+    fp:criticising fp:Potential_risk_of_food_shortages ;
+    fp:locatedIn fp:UK ;
+    fp:workingOn fp:labour_shortages .
+
+fp:Richard_Benyon a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate <http://wrenand.co.uk/fpn/What_measures_can_the_Government_take_to_promote_Anaerobic_digestion_as_a_really_good_green_method_of_reducing_food_waste?> ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:energy_from_waste .
+
+fp:Road_Haulage_Association a fp:Actor,
+        fp:professional_body,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:UK ;
+    fp:warning fp:Point_to_key_factors ;
+    fp:workingOn fp:hgv_driver_crisis .
+
+fp:Swedish_Institute_for_Food_and_Biotechnology a fp:Actor,
+        fp:Research_Institute,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:Sweden ;
+    fp:results <http://wrenand.co.uk/fpn/extent_and_effects,__causes_and_prevention_of_food_losses_and_food_waste> ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:The_Grocer a fp:Actor,
+        fp:publication,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:Global ;
+    fp:opine fp:Circular_economy_briefing ;
+    fp:workingOn fp:circular_economy .
+
+<http://wrenand.co.uk/fpn/The_Parliamentary_Under-Secretary_of_State,_Department_for_Environment,_Food_and_Rural_Affairs> a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:benefits_and_risks_of_using_food_waste_in_animal_feed,
+        fp:tackling_food_waste_in_Europe_and_throughout_the_world ;
+    fp:locatedIn fp:london ;
+    fp:workingOn fp:food_waste,
+        fp:food_waste_in_animal_feed .
+
+<http://wrenand.co.uk/fpn/The_Secretary_of_State_for_Environment,_Food_and_Rural_Affairs> a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Resources_and_Waste_Strategy_for_England,
+        fp:waste_and_resource_efficiency ;
+    fp:locatedIn fp:UK,
+        fp:london ;
+    fp:workingOn fp:food_waste_crime,
+        fp:minimising_waste .
+
+fp:UNEP a fp:Actor,
+        fp:Government,
+        owl:NamedIndividual ;
+    fp:invitate fp:Regional_Food_Waste_Working_Groups ;
+    fp:locatedIn fp:Kenya ;
+    fp:measurement fp:National_food_waste_measurement_methodology ;
+    fp:workingOn fp:food_waste,
+        fp:food_waste_measurement .
+
+fp:United_Nations_General_Assembly a fp:Actor,
+        fp:Government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:International_Day_of_Awareness_of_Food_Loss_and_Waste ;
+    fp:locatedIn fp:Nairobi ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:United_Nations_Secretary-General a fp:Actor,
+        fp:government,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Set_reduction_target_and_Measure_food_loss_and_waste ;
+    fp:locatedIn fp:Nairobi ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:WRAP a fp:Actor,
+        fp:Charity,
+        owl:NamedIndividual ;
+    fp:introduce fp:Food_Waste_Roadmap ;
+    fp:locatedIn fp:London,
+        fp:UK ;
+    fp:publish fp:Food_Labelling ;
+    fp:setting_targets fp:Pledges_on_the_environment_and_food_waste ;
+    fp:workingOn fp:climate_change,
+        fp:food_waste,
+        fp:food_waste_crime .
+
+fp:World_Bank a fp:Actor,
+        fp:InterGovernmental_Organization,
+        owl:NamedIndividual ;
+    fp:locatedIn fp:Gautemala,
+        fp:Nigeria,
+        fp:Rwanda,
+        fp:Vietnam,
+        fp:Washington ;
+    fp:results fp:Addressing_Food_Loss_and_Waste,
+        fp:food_loss_and_waste_challenges_and_opportunities ;
+    fp:workingOn fp:crop_loss,
+        fp:food_loss,
+        fp:food_loss_and_waste,
+        fp:food_safety,
+        fp:food_security .
+
+fp:World_Bank_Vice_President a fp:Actor,
+        fp:intergovernmental,
+        owl:NamedIndividual ;
+    fp:deliberate fp:Strategies_to_reduce_food_loss_and_waste_can_deliver_multiple_benefits ;
+    fp:locatedIn fp:Washington ;
+    fp:workingOn fp:food_loss_and_waste .
+
+fp:advising rdfs:subPropertyOf fp:actionImpacts .
+
+fp:allocated rdfs:subPropertyOf fp:actionImpacts .
+
+fp:allowing_choice rdfs:subPropertyOf fp:actionImpacts .
+
+fp:amendement rdfs:subPropertyOf fp:actionImpacts .
+
+fp:awarded_to rdfs:subPropertyOf fp:actionImpacts .
+
+fp:awareness rdfs:subPropertyOf fp:actionImpacts .
+
+fp:collaborating rdfs:subPropertyOf fp:takeAction .
+
+fp:concern rdfs:subPropertyOf fp:takeAction .
+
+fp:creating_choice rdfs:subPropertyOf fp:takeAction .
+
+fp:creating_landmarks rdfs:subPropertyOf fp:actionImpacts .
+
+fp:criticising rdfs:subPropertyOf fp:takeAction .
+
+fp:criticising_government rdfs:subPropertyOf fp:actionImpacts .
+
+fp:deliberate rdfs:subPropertyOf fp:takeAction .
+
+fp:food_industry a fp:Actor,
+        fp:business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:environmental_impact_of_waste .
+
+fp:forming_working_groups rdfs:subPropertyOf fp:actionImpacts .
+
+fp:implementing rdfs:subPropertyOf fp:takeAction .
+
+fp:introduce rdfs:subPropertyOf fp:takeAction .
+
+fp:invitate rdfs:subPropertyOf fp:takeAction .
+
+fp:launch rdfs:subPropertyOf fp:takeAction .
+
+fp:launching rdfs:subPropertyOf fp:takeAction .
+
+fp:measurement rdfs:subPropertyOf fp:takeAction .
+
+fp:modelling_and_extrapolation rdfs:subPropertyOf fp:actionImpacts .
+
+fp:opine rdfs:subPropertyOf fp:takeAction .
+
+fp:partnering rdfs:subPropertyOf fp:actionImpacts,
+        fp:takeAction .
+
+fp:policy_recommendations rdfs:subPropertyOf fp:actionImpacts .
+
+fp:provide rdfs:subPropertyOf fp:takeAction .
+
+fp:providing_convenience rdfs:subPropertyOf fp:actionImpacts .
+
+fp:providing_information rdfs:subPropertyOf fp:actionImpacts .
+
+fp:publish rdfs:subPropertyOf fp:takeAction .
+
+fp:reccomendation rdfs:subPropertyOf fp:actionImpacts .
+
+fp:recommendations rdfs:subPropertyOf fp:actionImpacts .
+
+fp:report rdfs:subPropertyOf fp:actionImpacts .
+
+fp:results rdfs:subPropertyOf fp:takeAction .
+
+fp:setting_targets rdfs:subPropertyOf fp:takeAction .
+
+fp:speaking rdfs:subPropertyOf fp:takeAction .
+
+fp:support rdfs:subPropertyOf fp:actionImpacts .
+
+fp:supporting_drivers rdfs:subPropertyOf fp:actionImpacts .
+
+fp:swtiching_materials rdfs:subPropertyOf fp:actionImpacts .
+
+fp:warning rdfs:subPropertyOf fp:actionImpacts,
+        fp:takeAction .
+
+fp:working rdfs:subPropertyOf fp:takeAction .
+
+fp:A_Plan_for_Public_Procurement_of_Food_and_Catering_Services a fp:Action,
+        fp:Guidelines ;
+    fp:date "2014-07-21T00:00:00"^^xsd:dateTime ;
+    fp:recommendations fp:Buyers,
+        fp:Small_businesses ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "encourage healthier eating, foster a great connection with food, and celebrate local food." ;
+    fp:source <https://hansard.parliament.uk/Commons/2014-07-21/debates/1407213000013/PublicProcurementOfFoodAndCatering?highlight=%22food%20waste%22#contribution-1407213000069> .
+
+fp:A_new_cauliflower_product a fp:Action,
+        fp:Supply ;
+    fp:date "2021-06-21T00:00:00"^^xsd:dateTime ;
+    fp:providing_convenience fp:Ocado ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "Limiting food waste" ;
+    fp:source <https://drive.google.com/file/d/13rr6-Bk3pyblzMApK5i7jTAa-aiub6ey/view?usp=sharing> .
+
+fp:Addressing_Food_Loss_and_Waste a fp:Action,
+        fp:Study ;
+    fp:date "2020-07-28T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:Countries ;
+    fp:relatesTo fp:food_security ;
+    fp:significance "Addressing trade offs between food affordability, rural livelihoods, and sustainable use of natural resources" ;
+    fp:source <https://openknowledge.worldbank.org/bitstream/handle/10986/34521/Addressing-Food-Loss-and-Waste-A-Global-Problem-with-Local-Solutions.pdf?sequence=1&isAllowed=y> .
+
+fp:Announcing rdfs:subClassOf fp:Action .
+
+fp:Article rdfs:subClassOf fp:Action .
+
+fp:Bristol_East a fp:Place,
+        owl:NamedIndividual .
+
+fp:Brits a fp:Actor,
+        fp:Citizens,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste .
+
+fp:Businesses a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste .
+
+fp:CEO rdfs:subClassOf fp:Actor .
+
+fp:Charities a fp:Actor,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste .
+
+fp:Charity rdfs:subClassOf fp:Actor .
+
+fp:Choose-your-own-egg_stand a fp:Action,
+        fp:Promotion ;
+    fp:allowing_choice fp:Brits ;
+    fp:date "2021-06-14T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "Allowing customers to choose how many eggs they purchase" ;
+    fp:source <https://drive.google.com/file/d/104ln7R5bWH-T6GVq4a8bpxiYQAI6JChS/view?usp=sharing> .
+
+fp:Circular_economy_briefing a fp:Action,
+        fp:Article ;
+    fp:date "2021-06-18T00:00:00"^^xsd:dateTime ;
+    fp:providing_information fp:Food_industry ;
+    fp:relatesTo fp:circular_economy ;
+    fp:significance "A circular economy encourages diversity of production, with shorter supply chains and reduced waste, creating local jobs and building resilience." ;
+    fp:source <https://drive.google.com/file/d/1TN5Y86AhnYs_jWawyJazAayX3U307j14/view?usp=sharing> .
+
+fp:Citizen_Food_Waste_Prevention_Grant a fp:Action,
+        fp:Funding ;
+    fp:awarded_to fp:NFPOs,
+        fp:SMEs ;
+    fp:date "2020-01-30T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:household_food_waste ;
+    fp:significance "£500000" ;
+    fp:source <https://www.gov.uk/government/news/over-1m-to-fund-food-waste-fight> .
+
+fp:Citizens rdfs:subClassOf fp:Actor .
+
+fp:Coalition rdfs:subClassOf fp:Actor .
+
+fp:Collaborative_Projects a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste .
+
+fp:Community rdfs:subClassOf fp:Actor .
+
+fp:Companies a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_loss_and_waste .
+
+fp:Deliberation rdfs:subClassOf fp:Action .
+
+fp:Departmental_Wastes a fp:Action,
+        fp:Recommendation ;
+    fp:date "2008-07-21T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:waste_sent_to_landfill ;
+    fp:significance "Reducing the volume of waste produced by departments and steps taken by each" ;
+    fp:source <https://hansard.parliament.uk/Commons/2008-07-21/debates/08072136000023/DepartmentalWastes?highlight=%22food%20waste%22#contribution-08072136000155> .
+
+fp:Entreprenuer rdfs:subClassOf fp:Actor .
+
+fp:Farmer_community a fp:Actor,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste_crime .
+
+<http://wrenand.co.uk/fpn/Food:_Waste_Disposal> a fp:Action,
+        fp:Question ;
+    fp:date "2007-10-18T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:local_authorities ;
+    fp:relatesTo fp:food_waste_collection ;
+    fp:significance "Clarity on collection of food waste- weekly, types of contains, treatment facilities" ;
+    fp:source <https://hansard.parliament.uk/Commons/2007-10-18/debates/07101833000050/FoodWasteDisposal?highlight=%22food%20waste%22#contribution-07101833000424> .
+
+fp:Food_Industry a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:consumer_food_waste .
+
+fp:Food_Waste_Disposal a fp:Action,
+        fp:Question ;
+    fp:date "2007-10-18T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:local_authorities ;
+    fp:relatesTo fp:food_waste_collection ;
+    fp:significance "Clarity on collection of food waste- weekly, types of contains, treatment facilities" ;
+    fp:source <https://hansard.parliament.uk/Commons/2007-10-18/debates/07101833000050/FoodWasteDisposal?highlight=%22food%20waste%22#contribution-07101833000424> .
+
+fp:Food_Waste_Reduction_fund a fp:Action,
+        fp:Funding ;
+    fp:awarded_to fp:Charities,
+        fp:NFPOs ;
+    fp:date "1905-07-11T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "£15 million" ;
+    fp:source <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/765914/resources-waste-strategy-dec-2018.pdf> .
+
+fp:Food_Waste_Roadmap a fp:Action,
+        fp:Guidelines ;
+    fp:advising fp:Businesses ;
+    fp:date "1905-07-11T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "Giving businesses directions on cutting waste" ;
+    fp:source <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/765914/resources-waste-strategy-dec-2018.pdf> .
+
+fp:Food_loss_and_waste_is_a_big_challenge_of_our_time a fp:Action,
+        fp:Convention ;
+    fp:awareness fp:Countries ;
+    fp:date "2020-07-29T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "promoting stronger partnerships, more public and private investments in training for smallholder farmers, technology and innovation" ;
+    fp:source <https://www.unep.org/news-and-stories/press-release/food-loss-and-waste-must-be-reduced-greater-food-security-and> .
+
+fp:Food_loss_and_waste_to_be_part_of_national_climate_strategies a fp:Action,
+        fp:Convention ;
+    fp:awareness fp:Countries ;
+    fp:date "2020-07-29T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "improve mitigation and adaptation from food systems by as much as 25 percent," ;
+    fp:source <https://www.unep.org/news-and-stories/press-release/food-loss-and-waste-must-be-reduced-greater-food-security-and> .
+
+fp:Food_surplus_and_waste_hierarchy a fp:Action,
+        fp:Guidelines ;
+    fp:advising fp:Producers ;
+    fp:date "2018-12-18T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:surplus_food_redistribution ;
+    fp:significance "support redistribution of surplus food" ;
+    fp:source <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/765914/resources-waste-strategy-dec-2018.pdf> .
+
+fp:Gautemala a fp:Place,
+        owl:NamedIndividual .
+
+fp:Global a fp:Place,
+        owl:NamedIndividual .
+
+fp:Grower_body rdfs:subClassOf fp:Actor .
+
+<http://wrenand.co.uk/fpn/High/medium-income_countries> a fp:Actor,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_loss_and_waste .
+
+fp:Households a fp:Actor,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste_crime .
+
+fp:Industry a fp:Actor,
+        fp:Retailers_and_suppliers,
+        owl:NamedIndividual ;
+    fp:activeIn fp:climate_change .
+
+fp:InterGovernmental_Organization rdfs:subClassOf fp:Actor .
+
+fp:International_Day_of_Awareness_of_Food_Loss_and_Waste a fp:Action,
+        fp:Convention ;
+    fp:awareness fp:Countries ;
+    fp:date "2019-07-29T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "recognising the fundamental role that sustainable food production plays in promoting food security and nutrition." ;
+    fp:source <https://www.un.org/en/observances/end-food-waste-day/background> .
+
+fp:Kenya a fp:Place,
+        owl:NamedIndividual .
+
+<http://wrenand.co.uk/fpn/Kitchen_food_waste_cannot_be_composted_in_open_windrows.> a fp:Action,
+        fp:Recommendation ;
+    fp:date "2009-01-13T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:composting ;
+    fp:significance "different methods required to treat different food waste" ;
+    fp:source <https://hansard.parliament.uk/Commons/2009-01-13/debates/09011348000046/Compost?highlight=%22food%20waste%22#contribution-09011348001152> .
+
+fp:Low-income_countries a fp:Actor,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_loss_and_waste .
+
+fp:Manufacturers a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste_crime .
+
+fp:National_food_waste_measurement_methodology a fp:Action,
+        fp:Study ;
+    fp:modelling_and_extrapolation fp:Countries ;
+    fp:relatesTo fp:food_waste_measurement ;
+    fp:significance "enable policymakers to make key strategic decisions to prevent food waste" ;
+    fp:source <https://www.unep.org/resources/report/unep-food-waste-index-report-2021> .
+
+fp:Nations rdfs:subClassOf fp:Actor .
+
+fp:Nationwide_rollout rdfs:subClassOf fp:Action .
+
+fp:Nigeria a fp:Place,
+        owl:NamedIndividual .
+
+fp:Ocado a fp:Actor,
+        fp:Retail,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste .
+
+fp:Pledges_on_the_environment_and_food_waste a fp:Action,
+        fp:Recommendation ;
+    fp:creating_landmarks fp:Industry ;
+    fp:date "2021-07-21T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:climate_change ;
+    fp:significance "Bring about a 50% absolute reduction of GHG emissions associated with food and drink by 2030" ;
+    fp:source <https://drive.google.com/file/d/1AH4JP4ireaKHuY5EIomJOEMYZ0mMmgPo/view?usp=sharing> .
+
+fp:Point_to_key_factors a fp:Action,
+        fp:Advice ;
+    fp:date "2021-02-07T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:hgv_driver_crisis ;
+    fp:significance "Preventing thousands of tonnes of food a week going to waste" ;
+    fp:source <https://drive.google.com/file/d/1RagwoRcMVTwVry2y4Bg43IGSVkRWmzJE/view?usp=sharing> ;
+    fp:supporting_drivers fp:UK_Government .
+
+fp:Potential_risk_of_food_shortages a fp:Action,
+        fp:Warning ;
+    fp:criticising_government fp:UK_Government ;
+    fp:date "2021-07-23T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:labour_shortages ;
+    fp:significance "Labour issues needs to be resolved otherwise shelves will be empty, food waste will rocket simply because it cannot be processed or delivered" ;
+    fp:source <https://drive.google.com/file/d/1GN6ra3k5jG79T0jSelUDGGnjay_kKx7w/view?usp=sharing> .
+
+fp:Prediction rdfs:subClassOf fp:Action .
+
+fp:Press_release rdfs:subClassOf fp:Action .
+
+fp:Preventing_excess_food_from_going_into_dustbins a fp:Action,
+        fp:Recommendation ;
+    fp:date "2007-03-28T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:energy_from_waste ;
+    fp:significance "food waste is utlised in generating large amount of energy" ;
+    fp:source <https://hansard.parliament.uk/Lords/2007-03-28/debates/07032873000007/LocalGovernmentRefuseCollection?highlight=%22food%20waste%22#contribution-07032873000086> .
+
+fp:Producer rdfs:subClassOf fp:Actor .
+
+fp:Promotion rdfs:subClassOf fp:Action .
+
+fp:Public_procurement_of_food_and_catering a fp:Action,
+        fp:Toolkit ;
+    fp:advising fp:Buyers,
+        fp:Catering_suppliers ;
+    fp:date "2014-04-21T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:hospitality_and_food_service_food_waste ;
+    fp:significance "Support demand for sustainable, locally sourced, nutritious and palatable food" ;
+    fp:source <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/765914/resources-waste-strategy-dec-2018.pdf> .
+
+fp:Reducing_Food_waste a fp:Action,
+        fp:Recommendation ;
+    fp:date "2021-03-24T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:Countries ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "reducing food waste helps mitigate climate change, protect biodiversity, improve other environmental outcomes and use our resources more efficiently" ;
+    fp:source <https://hansard.parliament.uk/Lords/2021-03-24/debates/922AFE55-9B0B-4500-9216-DA60B0A13E5C/FoodWaste> .
+
+fp:Regional_Food_Waste_Working_Groups a fp:Action,
+        fp:Convention ;
+    fp:date "1905-07-13T00:00:00"^^xsd:dateTime ;
+    fp:forming_working_groups fp:Countries ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "Capacity building and training to participating Member States in measuring food waste" ;
+    fp:source <https://www.unep.org/resources/report/unep-food-waste-index-report-2021> .
+
+fp:Research_Institute rdfs:subClassOf fp:Actor .
+
+fp:Resources_and_Waste_Strategy_for_England a fp:Action,
+        fp:Recommendation ;
+    fp:date "2018-12-18T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:Farmer_community,
+        fp:Households,
+        fp:Manufacturers ;
+    fp:relatesTo fp:food_waste_crime ;
+    fp:significance "food waste measurement to crackdown on food needlessly going waste" ;
+    fp:source <https://hansard.parliament.uk/Commons/2018-12-18/debates/181218104000014/ResourcesAndWasteStrategy?highlight=%22food%20waste%22#contribution-6AC2025B-A84E-4A1C-AFDA-3001029DC190> .
+
+fp:Retailer rdfs:subClassOf fp:Actor .
+
+fp:Retailers a fp:Actor,
+        fp:Retail,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste_and_a_loss_of_sales .
+
+fp:Retailers_and_suppliers rdfs:subClassOf fp:Actor .
+
+fp:Richmond_Park a fp:Place,
+        owl:NamedIndividual .
+
+fp:Rolling_out_anti-food_waste_app a fp:Action,
+        fp:Nationwide_rollout ;
+    fp:date "2021-06-14T00:00:00"^^xsd:dateTime ;
+    fp:partnering fp:Too_Good_To_Go ;
+    fp:relatesTo fp:retail_waste ;
+    fp:significance "ensuring perfectly good food is eaten and enjoyed instead of wasted." ;
+    fp:source <https://drive.google.com/file/d/1ddpUuaizpTZyYdURz-rj6BXkJvwnPy97/view?usp=sharing> .
+
+fp:Rwanda a fp:Place,
+        owl:NamedIndividual .
+
+fp:SMEs a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:household_food_waste .
+
+fp:Separate_collection_of_household_waste a fp:Action,
+        fp:Recommendation ;
+    fp:date "2020-11-12T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:Countries ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "Recyclable household waste" ;
+    fp:source <https://hansard.parliament.uk/Commons/2020-11-12/debates/237c538c-bedd-4514-805a-a9c75d95f5ca/EnvironmentBill(FifteenthSitting)?highlight=%22food%20waste%22#contribution-D3964789-3469-43FB-8F8D-5391109D3468> .
+
+fp:Set_reduction_target_and_Measure_food_loss_and_waste a fp:Action,
+        fp:Convention ;
+    fp:awareness fp:Countries ;
+    fp:date "2020-07-29T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "to stop ethical outrage by shopping carefully, storing food correctly, and using leftovers." ;
+    fp:source <https://www.unep.org/news-and-stories/press-release/food-loss-and-waste-must-be-reduced-greater-food-security-and> .
+
+fp:Small_businesses a fp:Actor,
+        fp:business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste .
+
+fp:Strategies_to_reduce_food_loss_and_waste_can_deliver_multiple_benefits a fp:Action,
+        fp:Press_release ;
+    fp:awareness fp:Countries ;
+    fp:date "2020-07-28T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "help countries improve the health of their people, economies and environment." ;
+    fp:source <https://www.worldbank.org/en/news/press-release/2020/09/28/cutting-food-loss-and-waste-can-deliver-big-wins-for-countries-food-security-and-environment> .
+
+fp:Supplier rdfs:subClassOf fp:Actor .
+
+fp:Supply rdfs:subClassOf fp:Action .
+
+fp:Sweden a fp:Place,
+        owl:NamedIndividual .
+
+fp:Swtiching_supplies rdfs:subClassOf fp:Action .
+
+fp:Target_Measure_Act_approach a fp:Action,
+        fp:Guidelines ;
+    fp:advising fp:Companies,
+        fp:Countries ;
+    fp:date "2019-11-01T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "strengthen food security and cost redution by integrating food waste reduction" ;
+    fp:source <https://www.unep.org/resources/report/unep-food-waste-index-report-2021> .
+
+fp:Tarrifs_on_food_waste a fp:Action,
+        fp:Advice ;
+    fp:date "2014-12-09T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:unpackaged_food_waste ;
+    fp:report fp:producers ;
+    fp:significance "inclusion of energy crop in the feedstock mix to hedge against the risk inherent in short-term waste contracts." ;
+    fp:source <https://hansard.parliament.uk/Commons/2014-12-09/debates/14120937000015/RenewableHeatIncentive?highlight=%22food%20waste%22#contribution-14120937000059> .
+
+fp:The_Netherlands a fp:Place,
+        owl:NamedIndividual .
+
+fp:Too_Good_To_Go a fp:Actor,
+        fp:anti-food_waste_app,
+        owl:NamedIndividual ;
+    fp:activeIn fp:retail_waste .
+
+fp:Use_food_waste_as_resource a fp:Action,
+        fp:Recommendation ;
+    fp:date "2016-03-17T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:energy_from_waste ;
+    fp:significance "food waste to be used in anaerobic digesters to produce electricity" ;
+    fp:source <https://hansard.parliament.uk/Commons/2016-03-17/debates/16031721000023/FoodWaste?highlight=%22food%20waste%22#contribution-766A9F98-49B1-4976-B6BB-C0F389D8864A> .
+
+fp:Value_from_Food_Waste_fund a fp:Action,
+        fp:Funding ;
+    fp:awarded_to fp:Collaborative_Projects ;
+    fp:date "2020-01-30T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "£650000" ;
+    fp:source <https://www.gov.uk/government/news/over-1m-to-fund-food-waste-fight> .
+
+fp:Vietnam a fp:Place,
+        owl:NamedIndividual .
+
+fp:Waddington_Europe a fp:Actor,
+        fp:packaging_supplier,
+        owl:NamedIndividual ;
+    fp:activeIn fp:resources_use .
+
+fp:Warning rdfs:subClassOf fp:Action .
+
+<http://wrenand.co.uk/fpn/What_measures_can_the_Government_take_to_promote_Anaerobic_digestion_as_a_really_good_green_method_of_reducing_food_waste?> a fp:Action,
+        fp:Question ;
+    fp:date "2019-02-21T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:energy_from_waste ;
+    fp:significance "Using Anaerobic digestion to treat food waste local authorities and businesses" ;
+    fp:source <https://hansard.parliament.uk/Commons/2019-02-21/debates/4F74FE5A-625F-4395-9B00-A4CDF2183D2E/FoodWaste?highlight=%22food%20waste%22#contribution-5AAD61D1-6670-404B-B137-C043977153EE> .
+
+fp:anaerobic_digestion_of_manure_and_food_waste_demonstration_projects a fp:Action,
+        fp:Funding ;
+    fp:allocated fp:collaborative_Projects ;
+    fp:date "2010-02-23T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:anaerobic_digestion_of_food_waste ;
+    fp:significance "£265,000" ;
+    fp:source <https://hansard.parliament.uk/Lords/2010-02-23/debates/10022350001564/DepartmentForEnvironmentFoodAndRuralAffairsDEL?highlight=%22food%20waste%22#contribution-10022350000267> .
+
+fp:anti-food_waste_app rdfs:subClassOf fp:Actor .
+
+fp:benefits_and_risks_of_using_food_waste_in_animal_feed a fp:Action,
+        fp:Recommendation ;
+    fp:date "2011-12-06T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:food_waste_in_animal_feed ;
+    fp:significance "examine the risks to human and animal health, the social and environmental sustainability and the economics of using food waste in animal feed." ;
+    fp:source <https://hansard.parliament.uk/Lords/2011-12-06/debates/11120670000134/AgricultureAnimalFeed?highlight=%22food%20waste%22#contribution-11120670000069> .
+
+fp:collaborative_Projects a fp:Actor,
+        fp:business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:anaerobic_digestion_of_food_waste .
+
+fp:community rdfs:subClassOf fp:Actor .
+
+fp:energy_supplier rdfs:subClassOf fp:Actor .
+
+<http://wrenand.co.uk/fpn/extent_and_effects,__causes_and_prevention_of_food_losses_and_food_waste> a fp:Action,
+        fp:Recommendation ;
+    fp:policy_recommendations <http://wrenand.co.uk/fpn/High/medium-income_countries>,
+        fp:Low-income_countries ;
+    fp:relatesTo fp:food_loss_and_waste ;
+    fp:significance "assessments of the magnitude of food losses in value chain and  focussing on quantitative weight losses" ;
+    fp:source <http://www.fao.org/3/mb060e/mb060e.pdf> .
+
+<http://wrenand.co.uk/fpn/farmers_rewarded_for_doing_the_right_thing_with_food_waste,> a fp:Action,
+        fp:Recommendation ;
+    fp:amendement fp:Countries ;
+    fp:date "2018-11-01T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "data and transparency in supply chain" ;
+    fp:source <https://hansard.parliament.uk/Commons/2018-11-01/debates/89853e40-c9d8-48fe-8e61-da6a061590be/AgricultureBill(SeventhSitting)?highlight=%22food%20waste%22#contribution-5042D9CE-B30F-4226-89CB-6B2C75CBAA83> .
+
+fp:fight_food_loss_with_innovation a fp:Action,
+        fp:Recommendation ;
+    fp:date "2019-07-29T00:00:00"^^xsd:dateTime ;
+    fp:reccomendation fp:farmers ;
+    fp:relatesTo fp:post-harvest_loss ;
+    fp:significance "helping farmers ensure the grains are sufficiently dried and tackle the main cause of post-harvest loss in grain" ;
+    fp:source <https://www.unep.org/news-and-stories/press-release/food-loss-and-waste-must-be-reduced-greater-food-security-and> .
+
+fp:food_loss_and_waste_challenges_and_opportunities a fp:Action,
+        fp:Study ;
+    fp:date "2020-07-28T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:farmers ;
+    fp:relatesTo fp:crop_loss,
+        fp:food_loss,
+        fp:food_loss_and_waste,
+        fp:food_safety ;
+    fp:significance "Better transport on a busy North-South corridor, ensuring more food reaches the burgeoning population in the South",
+        "Improved food safety, better food production from dwindling natural resources, compliance with import-export standards erdicating food rejections",
+        "Improving weather and market information reaching farmers reduce food loss and waste",
+        "investments in storage systems at the farm or cooperative levels could greatly reduce losses and generate more sales from poor subsistence farmers and therefore higher incomes" ;
+    fp:source <https://www.worldbank.org/en/news/press-release/2020/09/28/cutting-food-loss-and-waste-can-deliver-big-wins-for-countries-food-security-and-environment> .
+
+fp:households a fp:Actor,
+        fp:public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:minimising_waste .
+
+fp:intergovernmental rdfs:subClassOf fp:Actor .
+
+fp:packaging_supplier rdfs:subClassOf fp:Actor .
+
+fp:president rdfs:subClassOf fp:Actor .
+
+fp:producers a fp:Actor,
+        fp:business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:unpackaged_food_waste .
+
+fp:professional_body rdfs:subClassOf fp:Actor .
+
+fp:progress_tmade_on__reducing_household_food_waste a fp:Action,
+        fp:Question ;
+    fp:date "2011-12-12T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:household_food_waste ;
+    fp:report fp:local_authorities ;
+    fp:significance "cut food waste through responsibility deals and consumer advice." ;
+    fp:source <https://hansard.parliament.uk/Lords/2011-12-12/debates/1112128000900/FoodWaste> .
+
+fp:providing_recyled_punnets a fp:Action,
+        fp:Swtiching_supplies ;
+    fp:date "2021-02-08T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:resources_use ;
+    fp:significance "Reducing carbon emissions" ;
+    fp:source <https://drive.google.com/file/d/1zQ3ce271w0Hs4YYACAauO0i_ElK6kSN0/view?usp=sharing> ;
+    fp:swtiching_materials fp:Waddington_Europe .
+
+fp:public_procurement_of_food_and_catering a fp:Action,
+        fp:Toolkit ;
+    fp:advising fp:Buyers,
+        fp:Catering_suppliers ;
+    fp:date "2014-04-21T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:hospitality_and_food_service_food_waste ;
+    fp:significance "Support demand for sustainable, locally sourced, nutritious and palatable food" ;
+    fp:source <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/765914/resources-waste-strategy-dec-2018.pdf> .
+
+fp:publication rdfs:subClassOf fp:Actor .
+
+fp:tackling_food_waste_in_Europe_and_throughout_the_world a fp:Action,
+        fp:Recommendation ;
+    fp:date "2014-11-06T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "mitigate the increasing demand for food and resources around the world." ;
+    fp:source <https://hansard.parliament.uk/Lords/2014-11-06/debates/14110656000249/EUCountingTheCostOfFoodWaste(EUCReport)?highlight=%22food%20waste%22#contribution-14110656000171> .
+
+fp:waste_and_resource_efficiency a fp:Action,
+        fp:Deliberation ;
+    fp:date "2020-01-30T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:households ;
+    fp:relatesTo fp:minimising_waste ;
+    fp:significance "maximising resource efficiency, minimising waste, and moving towards a more circular economic model" ;
+    fp:source <https://hansard.parliament.uk/Commons/2020-01-30/debates/20013034000016/EnvironmentBill?highlight=%22food%20waste%22#contribution-E5E0ACAA-DF56-406B-8EB1-5F57A4169551> .
+
+fp:Advice rdfs:subClassOf fp:Action .
+
+fp:Catering_suppliers a fp:Actor,
+        fp:Business,
+        fp:business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:hospitality_and_food_service_food_waste .
+
+fp:Food_industry a fp:Actor,
+        fp:Business,
+        fp:Producers,
+        owl:NamedIndividual ;
+    fp:activeIn fp:circular_economy,
+        fp:food_waste_crime .
+
+fp:Foodwaste_collection a fp:Action,
+        fp:Recommendation ;
+    fp:date "2020-11-12T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:Countries ;
+    fp:relatesTo fp:food_waste_collection,
+        fp:reducing_food_waste ;
+    fp:significance "distinction between putting a whole pile of food waste in a general recycling bin and separating food waste out so that it can be used for specific purposes.",
+        "separating food waste to be used in recycling purposes" ;
+    fp:source <https://hansard.parliament.uk/Commons/2018-11-01/debates/89853e40-c9d8-48fe-8e61-da6a061590be/AgricultureBill(SeventhSitting)?highlight=%22food%20waste%22#contribution-5042D9CE-B30F-4226-89CB-6B2C75CBAA84>,
+        <https://hansard.parliament.uk/Commons/2020-11-12/debates/237c538c-bedd-4514-805a-a9c75d95f5ca/EnvironmentBill(FifteenthSitting)?highlight=separatingfoodwaste#contribution-24509B44-610C-4EFB-ADE0-BF457E2A1B68> .
+
+fp:NFPOs a fp:Actor,
+        fp:Business,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste,
+        fp:household_food_waste .
+
+fp:Producers a fp:Actor,
+        fp:Business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:surplus_food_redistribution ;
+    rdfs:subClassOf fp:Actor .
+
+fp:Retail rdfs:subClassOf fp:Actor .
+
+fp:Southampton a fp:Place,
+        owl:NamedIndividual .
+
+fp:Statement a fp:Action,
+        fp:Announcing,
+        fp:Prediction ;
+    fp:date "2021-06-18T00:00:00"^^xsd:dateTime,
+        "2021-07-23T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:food_waste_and_a_loss_of_sales,
+        fp:hgv_driver_crisis ;
+    fp:significance "Managing supply chain to prevent empty shelves and food waste",
+        "Preventing 50 tonnes of food a week going to waste" ;
+    fp:source <https://drive.google.com/file/d/143gPgQHRSOLg2yLq7bAlrtCdDo1rdEhg/view?usp=sharing>,
+        <https://drive.google.com/file/d/1s7vVg3EzhZzos3D4OEPNV-p2hTYaSuep/view?usp=sharing> ;
+    fp:support fp:Retailers ;
+    fp:warning fp:UK_Government .
+
+fp:Toolkit rdfs:subClassOf fp:Action .
+
+fp:Washington a fp:Place,
+        owl:NamedIndividual .
+
+fp:environmental_impact_of_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:farmers a fp:Actor,
+        fp:Community,
+        fp:community,
+        owl:NamedIndividual ;
+    fp:activeIn fp:crop_loss,
+        fp:food_loss,
+        fp:food_loss_and_waste,
+        fp:food_safety,
+        fp:post-harvest_loss .
+
+fp:Buyers a fp:Actor,
+        fp:Business,
+        fp:business,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste,
+        fp:hospitality_and_food_service_food_waste .
+
+fp:Food_Labelling a fp:Action,
+        fp:Guidelines ;
+    fp:advising fp:Food_Industry,
+        fp:Food_industry ;
+    fp:date "2017-11-01T00:00:00"^^xsd:dateTime ;
+    fp:relatesTo fp:consumer_food_waste,
+        fp:food_waste_crime ;
+    fp:significance "food is properly described for consumers, stored, used and safely provided to consumers for better health",
+        "food is properly described, stored, used and safely provided to consumers" ;
+    fp:source <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/765914/resources-waste-strategy-dec-2018.pdf> .
+
+fp:Food_waste_prevention a fp:Action,
+        fp:Question,
+        fp:Recommendation ;
+    fp:date "2007-03-28T00:00:00"^^xsd:dateTime,
+        "2014-11-06T00:00:00"^^xsd:dateTime ;
+    fp:policy_recommendations fp:countries ;
+    fp:relatesTo fp:food_waste ;
+    fp:significance "recyclable waste, packaging waste; a lot of the waste that goes into dustbins is food waste due to excess buying",
+        "tackling supply chain as a whole rather than thinking about food waste prevention at each stage.",
+        "the problem is not only recyclable waste or packaging waste; a lot of the waste that goes into dustbins is food waste due to excess buying" ;
+    fp:source <https://hansard.parliament.uk/Lords/2007-03-28/debates/07032873000007/LocalGovernmentRefuseCollection?highlight=%22food%20waste%22#contribution-07032873000086>,
+        <https://hansard.parliament.uk/Lords/2014-11-06/debates/14110656000249/EUCountingTheCostOfFoodWaste(EUCReport)?highlight=%22food%20waste%22#contribution-14110656000070> .
+
+fp:London a fp:Place,
+        owl:NamedIndividual .
+
+fp:Scientist rdfs:subClassOf fp:Actor .
+
+fp:Study rdfs:subClassOf fp:Action .
+
+fp:UK_Government a fp:Actor,
+        fp:Government,
+        owl:NamedIndividual ;
+    fp:activeIn fp:hgv_driver_crisis,
+        fp:labour_shortages .
+
+fp:anaerobic_digestion_of_food_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:circular_economy a fp:Issue,
+        owl:NamedIndividual .
+
+fp:climate_change a fp:Issue,
+        owl:NamedIndividual .
+
+fp:composting a fp:Issue,
+        owl:NamedIndividual .
+
+fp:crop_loss a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_loss a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_safety a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_security a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_waste_and_a_loss_of_sales a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_waste_in_animal_feed a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_waste_measurement a fp:Issue,
+        owl:NamedIndividual .
+
+fp:labour_shortages a fp:Issue,
+        owl:NamedIndividual .
+
+fp:local_authorities a fp:Actor,
+        fp:Public_benefit,
+        fp:public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_waste_collection,
+        fp:household_food_waste .
+
+fp:minimising_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:post-harvest_loss a fp:Issue,
+        owl:NamedIndividual .
+
+fp:public_benefit rdfs:subClassOf fp:Actor .
+
+fp:reducing_food_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:resources_use a fp:Issue,
+        owl:NamedIndividual .
+
+fp:retail_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:surplus_food_redistribution a fp:Issue,
+        owl:NamedIndividual .
+
+fp:unpackaged_food_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:waste_sent_to_landfill a fp:Issue,
+        owl:NamedIndividual .
+
+fp:Funding rdfs:subClassOf fp:Action .
+
+fp:consumer_food_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:Convention rdfs:subClassOf fp:Action .
+
+fp:Government rdfs:subClassOf fp:Actor .
+
+fp:Guidelines rdfs:subClassOf fp:Action .
+
+fp:Nairobi a fp:Place,
+        owl:NamedIndividual .
+
+fp:Question rdfs:subClassOf fp:Action .
+
+fp:hgv_driver_crisis a fp:Issue,
+        owl:NamedIndividual .
+
+fp:hospitality_and_food_service_food_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:business rdfs:subClassOf fp:Actor .
+
+fp:energy_from_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_waste_collection a fp:Issue,
+        owl:NamedIndividual .
+
+fp:household_food_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:countries a fp:Actor,
+        fp:Public_benefit,
+        fp:public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:composting,
+        fp:energy_from_waste,
+        fp:food_waste,
+        fp:food_waste_in_animal_feed,
+        fp:waste_sent_to_landfill .
+
+fp:Public_benefit rdfs:subClassOf fp:Actor .
+
+fp:london a fp:Place,
+        owl:NamedIndividual .
+
+fp:UK a fp:Place,
+        owl:NamedIndividual .
+
+fp:food_waste_crime a fp:Issue,
+        owl:NamedIndividual .
+
+fp:Business rdfs:subClassOf fp:Actor .
+
+fp:government rdfs:subClassOf fp:Actor .
+
+fp:Countries a fp:Actor,
+        fp:Countries,
+        fp:Nations,
+        fp:Public_benefit,
+        owl:NamedIndividual ;
+    fp:activeIn fp:food_loss_and_waste,
+        fp:food_security,
+        fp:food_waste,
+        fp:food_waste_collection,
+        fp:food_waste_measurement,
+        fp:reducing_food_waste ;
+    rdfs:subClassOf fp:Actor .
+
+fp:Recommendation rdfs:subClassOf fp:Action .
+
+fp:food_loss_and_waste a fp:Issue,
+        owl:NamedIndividual .
+
+fp:food_waste a fp:Issue,
+        owl:NamedIndividual .
+
