@@ -2,9 +2,10 @@
 
 Files necessary to extract node positions from a visualisation for precomputing layout. 
 
-N.B. Extracting all node positions requires a modified version of dash-cytoscape (supplied) that needs to be used in place of the same file in your build. It is not used in the final visualisation, so retain both. 
+N.B. Extracting all node positions requires a modified version of dash-cytoscape (supplied) that needs to be used in place of the same file in your build. Its location will depend on your system, so search is probably the best way to find it. This modified version is not used in or compatable with the final visualisation, so retain both & replace when done. 
 
-Run the relevant script, open a web browser and visit the url given in your terminal. Once visualised, box drag the nodes to select them & copy the string at the bottom into a new json file. These are given in outputs.
+* Run the relevant script, open a web browser and visit the url given in your terminal (likely http://127.0.0.1:8050/). 
+* Once visualised, box drag the nodes to select them & copy the string at the bottom into a new json file. These are given in outputs.
 
 ## Guide to files:
 
