@@ -1,6 +1,6 @@
 # visualisation
 
-Files used in the final visualisation. To execute, run edit.py in your terminal & use your browser to open the url shown
+Files used in the final visualisation. To execute, run edit.py in your terminal & use your browser to open the url shown (likely http://127.0.0.1:8050/ )
 
 ## Guide to files:
 * 13-8-inference.ttl - the final knowledge graph
