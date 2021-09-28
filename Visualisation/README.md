@@ -1,4 +1,4 @@
-# visualisation
+# Visualisation
 
 Files used in the final visualisation. To execute, run edit.py in your terminal & use your browser to open the url shown (likely http://127.0.0.1:8050/ )
 
