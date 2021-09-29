@@ -1,5 +1,5 @@
 # Domain-Knowledge-Graph-Visualisation
- MSc Project
+ MSc Project: Visualisation at https://fp-edit.herokuapp.com 
  
  ## Contents:
  1. Knowledge Graph Creation - folder containing all files relating to the knowledge graph construction work
